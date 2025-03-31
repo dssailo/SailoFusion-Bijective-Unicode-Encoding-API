@@ -1,0 +1,8 @@
+# Start the server
+python sailofusion.py
+
+# Encode a string
+curl -X POST http://localhost:5000/encode -H "Content-Type: application/json" -d '{"text":"Tin, a hma lama..."}'
+
+# Decode the result
+curl -X POST http://localhost:5000/decode -H "Content-Type: application/json" -d '{"hex":"a792f15c..."}'
